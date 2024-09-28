@@ -1,0 +1,970 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins-medium, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: poppins-medium;
+  src: url(./fontspoppins/Poppins-Medium.ttf);
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.FurnitureDiv {
+  background-image: url(/Rectangle\ 1441.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 40px 0 40px;
+  height: 1000px;
+}
+.FurnitureDiv > #num1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.FurnitureDiv > #num1 > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: auto 0;
+}
+#num1 > div > div {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  width: 400px;
+}
+#num1 > img {
+  width: 200px;
+  color: white;
+  margin-right: 330px;
+}
+#num1 > div > div:last-of-type {
+  width: 100px;
+  position: relative;
+}
+#num1 > div > div:last-of-type > span {
+  border: 1px solid rgb(184, 217, 245);
+  padding: 2px 8px;
+  border-radius: 20px;
+  position: absolute;
+  top: -15px;
+  left: 12px;
+  background-color: orange;
+}
+#options {
+  font-size: 20px;
+  margin: auto 0;
+}
+#arrowdown {
+  display: flex;
+}
+
+#num1 > div > p {
+  padding: 5px 8px;
+  border-radius: 20px;
+}
+
+/* testing animations */
+
+@keyframes justh1 {
+  0% {
+    color: #252b2e;
+    top: -300px;
+  }
+
+  100% {
+    color: white;
+    top: 0px;
+  }
+}
+.FurnitureDiv > h1 {
+  margin: 100px auto 50px auto;
+  color: white;
+  font-size: 85px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+  animation: justh1 2s 0s;
+}
+
+/* ending of the test of animations */
+/* For p animation*/
+
+@keyframes pAnime {
+  0% {
+    color: #252b2e;
+    top: -1000px;
+  }
+  100% {
+    color: white;
+    top: 0;
+  }
+}
+
+.FurnitureDiv > p {
+  font-size: 30px;
+  width: 700px;
+  margin: 0 auto;
+  position: relative;
+  color: white;
+  text-align: center;
+  animation: pAnime 3s 0s;
+}
+/*end of p animation*/
+
+#searchBtn {
+  border: 2px solid yellow;
+  display: flex;
+  width: 200px;
+  margin: 20px auto;
+  padding: 5px 15px;
+  background-color: rgba(150, 146, 146, 0);
+  border-radius: 30px;
+  backdrop-filter: blur(2px);
+}
+#searchBtn > input {
+  border: 0;
+  background-color: rgba(196, 187, 187, 0.007);
+  backdrop-filter: blur(2px);
+}
+#searchBtn > input:focus {
+  outline: none;
+  background-color: transparent;
+}
+#searchBtn > input::placeholder {
+  font-size: 17px;
+}
+#searchBtn > div {
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 5px 7px 0px;
+  color: white;
+  background-color: orange;
+}
+#searchBtn > div:hover {
+  padding: 7px 9px 2px;
+}
+
+/* #dotdotdot {
+  border: 1px solid green;
+  margin-left: 200px;
+  position: relative;
+  top: 200px;
+
+  display: inline-block;
+}
+#dotdotdot > div:first-child {
+  border: 1px solid red;
+  background-color: rgba(172, 164, 164, 0.801);
+  display: flex;
+  flex-direction: row;
+  width: 80px;
+  padding: 5px;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+#dotdotdot > div:first-child > div {
+  border: 2px solid rgb(241, 240, 243);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+#dotdotdot > div:last-child {
+  display: flex;
+  flex-direction: row;
+  width: 0px;
+  height: 0px;
+  border-top: 12px solid black;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  margin: 0 auto;
+}
+.dots > p {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+.dots {
+  padding: 10px;
+  border: 1px solid rgb(250, 246, 246);
+  display: inline-block;
+  border-radius: 50%;
+} */
+#one {
+  position: absolute;
+  left: 400px;
+}
+#two {
+  position: absolute;
+  right: 100px;
+}
+#three {
+  position: absolute;
+  left: 200px;
+}
+#four {
+  position: absolute;
+}
+
+/*why choosing us animations  */
+
+@keyframes WhyChooseUs {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.WhyChoosingUs > h1 {
+  animation: WhyChooseUs 2s 4s;
+  position: relative;
+  width: 290px;
+  margin: auto 0;
+  font-weight: 600;
+  font-size: 45px;
+}
+@keyframes choice1 {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0;
+  }
+}
+#choice1 {
+  position: relative;
+  animation: choice1 2s 6s;
+}
+@keyframes choice2 {
+  0% {
+    left: -800px;
+  }
+  100% {
+    left: 0;
+  }
+}
+#choice2 {
+  position: relative;
+  animation: choice2 2s 8s;
+}
+@keyframes choice3 {
+  0% {
+    left: -1100px;
+  }
+  100% {
+    left: 0;
+  }
+}
+#choice3 {
+  position: relative;
+  animation: choice3 2s 10s;
+}
+
+/* end of why choosing us animation */
+.WhyChoosingUs {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 50px;
+}
+.WhyChoosingUs > div {
+  width: 300px;
+  font-size: 18px;
+}
+.WhyChoosingUs > div > h4 {
+  font-size: 23px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.WhyChoosingUs > div > div {
+  display: flex;
+  gap: 5%;
+  margin-top: 20px;
+}
+.WhyChoosingUs > div > div > img {
+  height: 15px;
+  margin: auto 0;
+}
+.WhyChoosingUs > div > div > p {
+  margin: auto 0;
+  color: orange;
+}
+
+.ChairProducts {
+  background-color: rgb(216, 208, 208);
+  padding: 50px 0 0 0;
+}
+.ChairProducts > h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.ChairProducts > div:first-of-type {
+  display: flex;
+  margin: auto;
+  width: 390px;
+  border-radius: 30px;
+  padding: 5px 5px 0px 5px;
+  justify-content: space-between;
+
+  background-color: rgb(102, 99, 99);
+}
+.ChairProducts > div:first-of-type > p {
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+.ChairProducts > div:first-of-type > p:first-child {
+  background-color: white;
+}
+
+.chairs {
+  display: flex;
+  margin: 70px auto 0 auto;
+  gap: 3%;
+  width: 1120px;
+}
+.chairs > div {
+  position: relative;
+  margin: 70px 0 0 0;
+
+  width: 250px;
+  height: 440px;
+}
+.emptybox {
+  height: 58%;
+  background-color: rgb(165, 163, 163);
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* best selling products landing page animation */
+@keyframes BSP1anime {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 0;
+  }
+}
+.image1 {
+  animation: BSP1anime 2s 13s;
+  position: absolute;
+  top: -60px;
+  right: 10px;
+}
+@keyframes BSP2anime {
+  0% {
+    left: -500px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.image2 {
+  animation: BSP2anime 2s 15s;
+  position: absolute;
+  top: -60px;
+  right: 10px;
+}
+@keyframes BSP3anime {
+  0% {
+    left: -700px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.image3 {
+  animation: BSP3anime 2s 17s;
+  position: absolute;
+  top: -60px;
+  right: 8px;
+}
+@keyframes BSP4anime {
+  0% {
+    left: -900px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+.image4 {
+  animation: BSP4anime 2s 19s;
+  position: absolute;
+  top: -60px;
+  right: -2px;
+}
+
+/* end of best selling products landing page animation */
+.chairs > div > div > img {
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  bottom: 150px;
+}
+.chairs > div > div:nth-of-type(2) {
+  background-color: rgb(253, 255, 253);
+  padding: 10px 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.chairs > div > div:nth-of-type(2) > p:nth-of-type(1) {
+  color: rgb(202, 196, 196);
+}
+.chairs > div > div:nth-of-type(2) > p:nth-of-type(2) {
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.chairs > div > div:nth-of-type(2) > div:nth-of-type(2) {
+  display: flex;
+  margin: 20px 0 0 0;
+  justify-content: space-between;
+}
+sup {
+  font-size: 15px;
+}
+.chairs > div > div:nth-of-type(2) > div:nth-of-type(2) > p {
+  margin: auto 0;
+  font-weight: 900;
+  font-size: 20px;
+}
+.chairs > div > div:nth-of-type(2) > div:nth-of-type(2) > img,
+.chairs > div > div:nth-of-type(2) > div:nth-of-type(2) > img {
+  border-radius: 20px;
+  background-color: rgb(7, 7, 41);
+  padding: 8px;
+}
+#arro1 {
+  position: absolute;
+  left: -25px;
+  padding: 11px 8px;
+  border-radius: 20px;
+  top: 100px;
+  z-index: 33;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgb(107, 107, 131);
+}
+#arro2 {
+  background-color: white;
+
+  padding: 11px 8px;
+  border-radius: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 230px;
+  top: 100px;
+  box-shadow: 0px 2px 5px rgb(107, 107, 131);
+}
+
+.viewarrow {
+  color: orange;
+  width: 120px;
+  display: flex;
+
+  margin: 25px auto;
+  justify-content: space-between;
+}
+.viewarrow > p {
+  margin: auto 0;
+}
+.viewarrow > img {
+  margin: auto 0;
+}
+
+/* experience category animation */
+
+@keyframes experience {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0;
+  }
+}
+#BGleft {
+  animation: experience 2s 21s;
+}
+@keyframes experienceText {
+  0% {
+    right: -500px;
+  }
+  100% {
+    right: 0;
+  }
+}
+#BGleftText {
+  position: relative;
+  animation: experienceText 2s 21s;
+}
+/* end of experience category animations */
+
+.ExeP {
+  display: flex;
+  margin: 200px 0;
+}
+.ExeP > div:first-of-type {
+  position: relative;
+  margin-right: 100px;
+  z-index: 99;
+  left: -20px;
+}
+.ExeP > div > img {
+  box-shadow: 0px 10px 20px grey;
+  border-radius: 20px;
+}
+.ExeP > div:first-of-type > div:first-of-type {
+  width: 500px;
+  height: 100px;
+  z-index: -1;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.144);
+  position: absolute;
+  top: -40px;
+  left: -100px;
+}
+.ExeP > div:first-of-type > div:last-of-type {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 70px;
+  right: -40px;
+  width: 100px;
+  height: 320px;
+  border-radius: 20px;
+  z-index: -1;
+  background-color: rgba(95, 82, 82, 0.144);
+}
+.ExeP > div:last-of-type {
+  width: 550px;
+  margin: 20px 0 0 0;
+}
+.ExeP > div:last-of-type > h2 {
+  color: orange;
+  letter-spacing: 3px;
+}
+.ExeP > div:last-of-type > h1 {
+  width: 400px;
+  margin: 20px 0;
+  font-size: 40px;
+}
+.ExeP > div:last-of-type > p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+.ExeP > div:last-of-type > div {
+  display: flex;
+  width: 150px;
+  color: orange;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+.ExeP > div:last-of-type > div > p {
+  margin: auto 0;
+}
+.ExeP > div:last-of-type > div > img {
+  margin: auto 0;
+}
+/* material animations */
+@keyframes mathsText {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0;
+  }
+}
+#matText {
+  position: relative;
+  animation: mathsText 2s 23s;
+}
+@keyframes mathsBoxes {
+  0% {
+    right: -500px;
+  }
+  100% {
+    right: 0;
+  }
+}
+#matBoxes {
+  position: relative;
+  animation: mathsBoxes 2s 23s;
+}
+
+/* end of material animations */
+.material {
+  display: flex;
+  justify-content: space-between;
+  margin: 200px 0 0 0;
+}
+.material > div:first-of-type {
+  width: 550px;
+  margin: 0 40px;
+}
+.material > div:first-of-type > h2 {
+  color: orange;
+  letter-spacing: 3px;
+}
+.material > div:first-of-type > h1 {
+  width: 420px;
+  margin: 20px 0;
+  font-size: 40px;
+}
+.material > div:first-of-type > p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+.material > div:first-of-type > div {
+  display: flex;
+  width: 150px;
+  color: orange;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+.material > div:first-of-type > div > p {
+  margin: auto 0;
+}
+.material > div:first-of-type > div > img {
+  margin: auto 0;
+}
+.material > div:last-of-type {
+  position: relative;
+  display: flex;
+}
+#aa {
+  box-shadow: 2px 6px 5px grey;
+  border-radius: 20px;
+  right: -30px;
+  position: relative;
+}
+#bb {
+  position: absolute;
+  left: -220px;
+  top: -120px;
+  box-shadow: 2px 6px 5px grey;
+  border-radius: 20px;
+}
+#cc {
+  position: absolute;
+  bottom: 0;
+  left: -220px;
+  box-shadow: 2px 6px 5px grey;
+  border-radius: 20px;
+}
+#box {
+  width: 300px;
+  height: 200px;
+  background-color: rgba(95, 82, 82, 0.144);
+  position: absolute;
+  border-radius: 20px;
+  top: -50px;
+  right: -20px;
+  z-index: -1;
+}
+/* testimony animations */
+
+@keyframes testify1 {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0;
+  }
+}
+#testimony1 {
+  position: relative;
+  animation: testify1 2s 25s;
+}
+@keyframes testify2 {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+#testimony2 {
+  position: relative;
+  animation: testify2 2s 27s;
+}
+@keyframes testify3 {
+  0% {
+    left: -1500px;
+  }
+  100% {
+    left: 0;
+  }
+}
+#testimony3 {
+  animation: testify3 2s 29s;
+  position: relative;
+}
+
+/* end of testimony animations */
+
+.test {
+  text-align: center;
+  margin: 90px 40px 0px;
+}
+.test > h1 {
+  margin-bottom: 40px;
+}
+.test > p {
+  color: orange;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.test > div {
+  display: flex;
+  gap: 3%;
+}
+.test > div > div {
+  width: 390px;
+}
+.profilesA {
+  margin: 260px 20px 20px;
+  padding: 40px 0 0 0;
+  background-color: white;
+  border: 2px solid transparent;
+  position: relative;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.profilesA > p:first-of-type {
+  color: grey;
+  margin-bottom: 15px;
+}
+.profilesA > p:last-of-type {
+  margin: 0 40px;
+}
+#prof1 > img {
+  border-radius: 50%;
+  box-shadow: 0 3px 7px rgb(180, 175, 175);
+}
+#prof1 {
+  background-color: white;
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 7px;
+  top: -30px;
+  left: 145px;
+  position: absolute;
+}
+.stars1 {
+  width: 90px;
+  margin: 15px auto;
+  display: flex;
+  gap: 5%;
+}
+
+.profilesB {
+  margin: 260px 20px 20px;
+  padding: 40px 0 0 0;
+  background-color: white;
+  border: 2px solid transparent;
+  position: relative;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.profilesB > p:first-of-type {
+  color: grey;
+  margin-bottom: 15px;
+}
+.profilesB > p:last-of-type {
+  margin: 0 40px;
+}
+#prof2 > img {
+  border-radius: 50%;
+  box-shadow: 0 3px 7px rgb(180, 175, 175);
+}
+#prof2 {
+  background-color: white;
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 7px;
+  top: -30px;
+  left: 145px;
+  position: absolute;
+}
+.stars2 {
+  width: 90px;
+  margin: 15px auto;
+  display: flex;
+  gap: 5%;
+}
+.stars2 > img:last-of-type {
+  opacity: 0.5;
+}
+.profilesC {
+  margin: 270px 20px 20px;
+  padding: 50px 0 0 0;
+  background-color: white;
+  border: 2px solid rgb(217, 255, 0);
+}
+.profilesC {
+  margin: 260px 20px 20px;
+  padding: 40px 0 0 0;
+  background-color: white;
+  border: 2px solid transparent;
+  position: relative;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.profilesC > p:first-of-type {
+  color: grey;
+  margin-bottom: 15px;
+}
+.profilesC > p:last-of-type {
+  margin: 0 40px;
+}
+#prof3 > img {
+  border-radius: 50%;
+  box-shadow: 0 3px 7px rgb(180, 175, 175);
+}
+#prof3 {
+  background-color: white;
+  width: max-content;
+  top: -30px;
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 7px;
+  top: -30px;
+  left: 145px;
+  position: absolute;
+}
+.stars3 {
+  width: 90px;
+  margin: 15px auto;
+  display: flex;
+  gap: 5%;
+}
+.stars3 > img:last-of-type {
+  opacity: 0.5;
+}
+
+.test > div > div:last-of-type > div:last-of-type {
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px rgb(197, 191, 191);
+  padding: 6px 6px 2px 6px;
+  position: absolute;
+  background-color: white;
+  right: -20px;
+  top: 200px;
+}
+.test > div > div:first-of-type {
+  height: 500px;
+  background-image: url(/unsplash__HqHX3LBN18.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.test > div > div:first-of-type > img:first-of-type {
+  box-shadow: 0px 2px 5px rgb(197, 191, 191);
+  position: absolute;
+  border-radius: 20px;
+  background-color: white;
+  padding: 9px 6px;
+  left: -20px;
+  top: 200px;
+}
+
+.test > div > div:nth-of-type(2) {
+  background-image: url(/unsplash_JaXs8Tk5Iww.png);
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.test > div > div:last-of-type {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(/unsplash_h2_3dL9yLpU.png);
+  position: relative;
+}
+
+.AboutUs {
+  display: flex;
+  padding: 30px 100px;
+  justify-content: space-between;
+}
+.logo {
+  width: 450px;
+}
+.logo > h1 {
+  margin: 0 0 20px 0;
+}
+.service {
+}
+.service > p {
+  margin-bottom: 5px;
+}
+.service > p:first-of-type {
+  color: orange;
+}
+.furniture {
+}
+.furniture > p {
+  margin-bottom: 5px;
+}
+.furniture > p:first-of-type {
+  color: orange;
+}
+.contacts {
+  width: 120px;
+}
+.contacts > div {
+  display: flex;
+  gap: 5%;
+}
+.contacts > div > img {
+  margin: auto 0;
+}
+.contacts > div,
+p {
+  margin-bottom: 5px;
+}
+.contacts > p:first-of-type {
+  color: orange;
+}
+.end {
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.end > p:first-of-type {
+  color: orange;
+}
+.end > div {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+#sp {
+  color: orange;
+  border: 1px solid orange;
+  border-radius: 50%;
+  padding: 0 4px;
+  font-size: 16px;
+  margin: auto 3px;
+}
